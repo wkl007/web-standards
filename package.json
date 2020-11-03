@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "npm run build && node ./deploy/index.js"
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
