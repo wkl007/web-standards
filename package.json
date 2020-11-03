@@ -1,0 +1,33 @@
+{
+  "name": "web-standards",
+  "version": "1.0.0",
+  "description": "前端开发规范",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && node ./deploy/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wkl007/web-standards.git"
+  },
+  "keywords": [
+    "web",
+    "standards"
+  ],
+  "author": "wkl",
+  "license": "MIT",
+  "homepage": "https://github.com/wkl007/web-standards",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.7.1",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-medium-zoom": "^1.7.1",
+    "@vuepress/plugin-nprogress": "^1.7.1",
+    "@vuepress/plugin-pwa": "^1.7.1",
+    "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.9.4"
+  }
+}
