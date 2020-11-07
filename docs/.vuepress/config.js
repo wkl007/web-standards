@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/web-standards/',
   dest: 'dist',
   title: '前端开发规范',
   description: '开发规范指南',
