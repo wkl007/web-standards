@@ -1,8 +1,10 @@
 import { defineUserConfig } from "vuepress-vite";
 import type { DefaultThemeOptions } from "vuepress-vite";
 
+const base = process.env.NODE_ENV === "development" ? "/" : "/web-standards/";
+
 export default defineUserConfig<DefaultThemeOptions>({
-  base: '/web-standards/',
+  base,
   lang: "zh-CN",
   title: "前端开发规范",
   description: "开发规范指南",
@@ -13,7 +15,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         rel: "icon",
         type: "image/png",
         sizes: "16x16",
-        href: "./icons/favicon-16x16.png",
+        href: `${base}icons/favicon-16x16.png`,
       },
     ],
     [
@@ -22,19 +24,22 @@ export default defineUserConfig<DefaultThemeOptions>({
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: "./icons/favicon-32x32.png",
+        href: `${base}icons/favicon-32x32.png`,
       },
     ],
-    ["link", { rel: "apple-touch-icon", href: "./icons/apple-touch-icon.png" }],
+    [
+      "link",
+      { rel: "apple-touch-icon", href: `${base}icons/apple-touch-icon.png` },
+    ],
     [
       "link",
       {
         rel: "mask-icon",
-        href: "./icons/safari-pinned-tab.svg",
+        href: `${base}icons/safari-pinned-tab.svg`,
         color: "#3eaf7c",
       },
     ],
-    ["link", { rel: "manifest", href: "./manifest.json" }],
+    ["link", { rel: "manifest", href: `${base}manifest.json` }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "application-name", content: "Web Standards" }],
     ["meta", { name: "apple-mobile-web-app-title", content: "Web Standards" }],
