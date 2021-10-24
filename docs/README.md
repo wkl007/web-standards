@@ -2,8 +2,10 @@
 home: true
 heroImage: /assets/logo.png
 heroText: 前端开发规范
-actionText: 快速上手 →
-actionLink: /guide/
+actions:
+- text: 快速上手 →
+  link: /guide/
+  type: primary
 features:
 - title: 功能丰富
   details: 对 Babel、TypeScript、ESLint、PostCSS、PWA、单元测试和 End-to-end 测试提供开箱即用的支持。
